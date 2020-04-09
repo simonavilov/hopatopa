@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Some Git practice</title>
+        <style>
+            div {
+                margin-left: auto;
+                margin-right: auto;
+                width: 700px;
+            }    
+
+        	.name {
+        		font-weight: bold;
+        		color: blue
+        	}
+
+        	.name1 {
+        		font-weight: bold;
+        		color: purple
+        	}
+
+            table {
+                margin-left: auto;
+                margin-right: auto;
+                border: 2px solid grey;
+                border-collapse: collapse;
+            }
+
+            th, td {
+                border: 2px solid grey;
+                padding: 3px;
+                text-align: center;
+            }
+
+            th {
+                background-color: lightgrey;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+        <table>
+            <tr>
+                <th>Lecture Number</th>
+                <th>Date</th>
+                <th>Project</th>
+            </tr>
+
+            <tr>
+                <td>Lecture 0</td>
+                <td>06/04/2020</td>
+                <td> - </td>
+            </tr>
+        </table>
+        </div>
+
+        <div>
+        <h3>The most valuable Git commands for the command line</h3>
+
+        <ul>
+        	<li>git clone <URL> - takes a repository stored somewhere else (like GitHub) and downloads in on your computer</li>
+        	<li>git add <filename(s)> - add file(s) to the staging area to be included in the next commit</li>
+        	<li>git commit -m "message"- take a snaphot of the repository and save it with a message about the changes</li>
+        	<li>git status - print what is currently going on with the repository</li>
+        	<li>git push - push any local changes (commits) to a remote server</li>
+        	<li>git pull - pull any remote changes from a remote server to a local computer</li>
+        	<li>git log - print a history of all commits that have been made</li>
+        	<li>git reflog -  print a list of all the different references to commits</li>
+        	<li>git reset --hard <commit> - reset the repository to a given commit</li>
+        	<li>git reset --hard origin/master - reset the repository to its original state (e.g. the version cloned from GitHub)</li>
+        </ul>
+
+        <h3>Some Git commands related to branching</h3>
+
+        <ol>
+        	<li>git branch - list all the branches currently in a repository</li>
+        	<li>git branch <name> - create a new branch called <span class = "name">name</span></li>
+        	<li>git checkout <name> - switch current working branch to <span class = "name">name</span></li>
+        	<li>git merge <name> - merge branch <span class = "name">name</span> into current working branch (normally master)</li>
+        </ol>
+        
+        <h3>Some Git commands related to remotes (any version of a repository that is not stored locally on a device) </h3>
+
+        <ul>
+        	<li>git fetch - download all of the latest commits from a remote to a local device</li>
+        	<li>git merge origin/master - merge <span class = "name1">origin/master</span> , which is the remote version of a repository normally downloaded with [git fetch], into the local, preexesiting <span class = "name1">master</span> branch</li>
+        		<ul>
+                <li>Note that <span class = "name1">git pull</span> is equivalent of running <span class = "name1">git fetch</span> and then <span class = "name1">git merge origin/master</span></li>
+                </ul>
+        </ul>
+
+        <h3>Some common HTML tags</h3>
+
+        <ul>
+            <li>html-/html - contents of website</li>
+            <li>head-/head - metadata about the page that is useful for the browser when displaying the page</li>
+            <li>title-/title - title of the page</li>
+            <li>body-/body - body of the page</li>
+            <li>h1-/h1 - header (h1 is the largest header, h6 is the smallest header)</li>
+            <li>ul-/ul - unordered list</li>
+            <li>ol-/ol - ordered list</li>
+            <li>li-/li - list item (must be inside either "ul-/ul" or "ol-/ol")</li>
+            <li>img src="path/to/img.jpg" height="200" width="300" - image stored at src attribute, which can also be a URL
+                <ul>
+                    <li>note that this is a single tag without an end tag</li>
+                    <li>both height and width are optional (if one is omitted, the browser will auto-size the image), and can also take a percentage: height=50% to automatically scale the image to a certain portion of the page</li></ul>
+            <li>table-/table - table</li>
+                <ul>
+                    <li>th-/th - table header</li>
+                    <li>tr-/tr - table row</li>
+                    <li>td-/td - table data (cell)</li></ul>
+            <li>form-/form - form that can be filled out and submitted by the user</li>
+            <li>input type="text" placeholder="Full Name" name="name" - input field type indicates the type of data. Placeholder is the greyed-out text shown before the field is filled. Name is an identifier for the input field</li>
+            <li>button-/button - button used to submit form</li>
+        </ul>
+        </div>
+
+    </body>
+</html>
